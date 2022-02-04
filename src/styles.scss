@@ -1,1 +1,8 @@
 @import "app/shared/style/color.scss";
+@import "app/shared/style/typo.scss";
+
+:root {
+  --phone-breakpoint: 480px;
+  --tablet-breakpoint: 768px;
+  --desktop-breakpoint: 1024px;
+}
