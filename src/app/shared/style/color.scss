@@ -1,47 +1,45 @@
 // COLORS
 
 .light-green {
-  color: #e4fde1;
+  color: var(--light-green-color);
 }
-
 .green {
-  color: #8acb88;
+  color: var(--green-color);
 }
-
 .blue {
-  color: #648381;
+  color: var(--blue-color);
 }
-
+.light-grey {
+  color: var(--grey-color);
+}
 .grey {
-  color: #575761;
+  color: var(--grey-color);
 }
-
 .yellow {
-  color: #ffbf46;
+  color: var(--yellow-color);
 }
-
 .white {
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 // BACKGROUND-COLORS
 
 .bg-light-green {
-  background-color: #e4fde1;
+  background-color: var(--light-green-color);
 }
 
 .bg-green {
-  background-color: #8acb88;
+  background-color: var(--green-color);
 }
 
 .bg-blue {
-  background-color: #648381;
+  background-color: var(--blue-color);
 }
 
 .bg-grey {
-  background-color: #575761;
+  background-color: var(--grey-color);
 }
 
 .bg-yellow {
-  background-color: #ffbf46;
+  background-color: var(--yellow-color);
 }

@@ -1,0 +1,18 @@
+<header [ngClass]="{ 'shadow-bottom' : !openMenu }">
+  <div id="links-desktop">
+    <ng-container *ngTemplateOutlet="links"></ng-container>
+  </div>
+
+  <i class="fas fa-bars grey" (click)="openMenu = !openMenu"></i>
+</header>
+
+<div id="links-phone" [ngClass]="{ 'shadow-bottom' : openMenu }">
+  <ng-container *ngTemplateOutlet="links"></ng-container>
+</div>
+
+<ng-template #links>
+    <a href="#">Mon parcours</a>
+    <a href="#">Mes compétences</a>
+    <a href="#">Mes projets</a>
+    <a href="#">Me contacter</a>
+</ng-template>
