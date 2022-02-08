@@ -1,18 +1,25 @@
-<header [ngClass]="{ 'shadow-bottom' : !openMenu }">
-  <div id="links-desktop">
+<body>
+
+  <header [ngClass]="{ 'shadow-bottom' : !openMenu }">
+    <img src="../assets/images/lotus.png" alt="Image d'un lotus">
+
+    <div id="links-desktop">
+      <ng-container *ngTemplateOutlet="links"></ng-container>
+    </div>
+
+    <i class="fas fa-bars grey" (click)="openMenu = !openMenu"></i>
+  </header>
+
+  <div id="links-phone" [ngClass]="{ 'shadow-bottom open-menu' : openMenu }">
     <ng-container *ngTemplateOutlet="links"></ng-container>
   </div>
 
-  <i class="fas fa-bars grey" (click)="openMenu = !openMenu"></i>
-</header>
+  <ng-template #links>
+      <a href="#" alt="Mon parcours"> Mon parcours </a>
+      <a href="#" alt="Mes compétences"> Mes compétences </a>
+      <a href="#" alt="Mes projets"> Mes projets </a>
+      <a href="#" alt="Me contacter"> Me contacter </a>
+  </ng-template>
 
-<div id="links-phone" [ngClass]="{ 'shadow-bottom' : openMenu }">
-  <ng-container *ngTemplateOutlet="links"></ng-container>
-</div>
+</body>
 
-<ng-template #links>
-    <a href="#">Mon parcours</a>
-    <a href="#">Mes compétences</a>
-    <a href="#">Mes projets</a>
-    <a href="#">Me contacter</a>
-</ng-template>
