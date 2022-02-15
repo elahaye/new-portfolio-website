@@ -1,0 +1,95 @@
+@import "../../../shared/style/breakpoint.scss";
+
+section,
+article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  height: calc(100vh - 60px);
+  margin-top: 60px;
+  flex-direction: column;
+
+  h1 {
+    color: var(--grey-color);
+    text-align: center;
+
+    span {
+      display: block;
+    }
+  }
+
+  article {
+    width: 100%;
+    height: 60%;
+    margin: 0 auto;
+
+    .featured-img {
+      position: relative;
+
+      &:hover {
+        &:before {
+          bottom: 4rem;
+          right: 4rem;
+        }
+
+        &:after {
+          top: 4rem;
+          left: 4rem;
+        }
+      }
+
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        transition: 0.3s ease;
+        border-radius: 20px;
+      }
+
+      &:before {
+        background-color: var(--light-green-color);
+        bottom: 2rem;
+        right: 2rem;
+      }
+
+      &:after {
+        background-color: var(--yellow-color);
+        top: 2rem;
+        left: 2rem;
+      }
+    }
+
+    .featured-img,
+    img {
+      width: 65vw;
+      max-width: 400px;
+    }
+
+    img {
+      height: auto;
+      display: block;
+      border-radius: 50%;
+    }
+  }
+}
+
+///////////
+
+@media screen and (min-width: $tablet-breakpoint) {
+  section {
+    flex-direction: row;
+    justify-content: space-around;
+
+    article {
+      width: 40%;
+      height: 100%;
+      margin: 0;
+    }
+  }
+}

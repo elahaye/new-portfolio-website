@@ -1,18 +1,20 @@
 <body>
 
-  <header [ngClass]="{ 'shadow-bottom' : !openMenu }">
-    <img src="../assets/images/lotus.png" alt="Image d'un lotus">
-
-    <div id="links-desktop">
-      <ng-container *ngTemplateOutlet="links"></ng-container>
+  <header [ngClass]="{ 'shadow-bottom' : !openMenu || innerWidth >= TABLETBREAKPOINT }">
+    <div id="logo">
+      <img src="../assets/images/lotus.png" alt="Image d'un lotus">
     </div>
+
+    <section id="links-desktop">
+      <ng-container *ngTemplateOutlet="links"></ng-container>
+    </section>
 
     <i class="fas fa-bars grey" (click)="openMenu = !openMenu"></i>
   </header>
 
-  <div id="links-phone" [ngClass]="{ 'shadow-bottom open-menu' : openMenu }">
+  <section id="links-phone" [ngClass]="{ 'shadow-bottom open-menu' : openMenu }">
     <ng-container *ngTemplateOutlet="links"></ng-container>
-  </div>
+  </section>
 
   <ng-template #links>
       <a href="#" alt="Mon parcours"> Mon parcours </a>

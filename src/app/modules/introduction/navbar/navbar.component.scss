@@ -5,13 +5,14 @@ body {
 }
 
 header,
-div {
+section {
   width: 100%;
   position: absolute;
   display: flex;
+  background-color: white;
 }
 
-div {
+section {
   a {
     margin: 0 20px;
     padding: 15px 0;
@@ -40,7 +41,7 @@ div {
 
     &:hover {
       color: var(--white-color);
-      transition: all 0.2s;
+      transition: all 0.3s;
     }
   }
 }
@@ -57,13 +58,23 @@ header {
   justify-content: space-between;
   background-color: white;
 
+  #logo {
+    cursor: pointer;
+    transition: transform 0.8s;
+    z-index: 100;
+
+    &:hover {
+      transform: rotateY(180deg);
+    }
+
+    img {
+      width: 50px;
+    }
+  }
+
   img,
   .fas {
     margin: 5px 10px;
-  }
-
-  img {
-    width: 50px;
   }
 
   .fas {
@@ -110,5 +121,6 @@ header {
   #links-desktop {
     display: flex;
     justify-content: flex-end;
+    z-index: 99;
   }
 }
