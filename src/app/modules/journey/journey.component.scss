@@ -1,0 +1,20 @@
+@import "../../shared/style/breakpoint.scss";
+
+section {
+  height: 100vh;
+  background-color: var(--light-green-color);
+
+  article {
+    &:first-of-type {
+      display: grid;
+      grid-template-columns: repeat(2, 4);
+
+      img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+      }
+    }
+  }
+}

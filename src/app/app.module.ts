@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { FirstImpressionComponent } from './modules/introduction/first-impression/first-impression.component';
 import { IntroductionComponent } from './modules/introduction/introduction.component';
 import { NavbarComponent } from './modules/introduction/navbar/navbar.component';
+import { JourneyComponent } from './modules/journey/journey.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     IntroductionComponent,
     NavbarComponent,
-    FirstImpressionComponent
+    FirstImpressionComponent,
+    JourneyComponent
   ],
   imports: [
     BrowserModule,
