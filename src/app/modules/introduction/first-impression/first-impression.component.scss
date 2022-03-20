@@ -83,21 +83,21 @@ section {
         height: 100%;
         z-index: -1;
         border-radius: 20px;
-        transition: 0.3s ease;
+        transition: 0.8s ease;
       }
 
       &:before {
         background-color: var(--light-green-color);
         bottom: 2rem;
         right: 2rem;
-        animation: counter-clockwise-rotating 30s linear infinite;
+        animation: counter-clockwise-rotating 80s linear infinite;
       }
 
       &:after {
         background-color: var(--yellow-color);
         top: 2rem;
         left: 2rem;
-        animation: clockwise-rotating 30s linear infinite;
+        animation: clockwise-rotating 80s linear infinite;
       }
 
       &:hover {

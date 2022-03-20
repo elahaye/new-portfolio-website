@@ -1,19 +1,144 @@
 @import "../../shared/style/breakpoint.scss";
 
 section {
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--light-green-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   article {
     &:first-of-type {
-      display: grid;
-      grid-template-columns: repeat(2, 4);
+      position: relative;
+      margin: 40px 0;
+      max-width: 300px;
+      min-height: 350px;
+      width: 100%;
 
       img {
+        position: absolute;
+        border: 8px solid white;
         border-radius: 50%;
         width: 150px;
         height: 150px;
         object-fit: cover;
+
+        &.one {
+          top: 0;
+          left: 10px;
+        }
+
+        &.two {
+          top: 60px;
+          left: 140px;
+        }
+
+        &.three {
+          top: 130px;
+          left: 0;
+        }
+
+        &.four {
+          top: 210px;
+          left: 120px;
+        }
+      }
+    }
+
+    &:last-of-type {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: justify;
+      margin-inline: 10px;
+      max-width: 500px;
+      color: var(--grey-color);
+    }
+  }
+}
+
+///////////
+
+@media screen and (min-width: $phone-breakpoint) {
+  section {
+    article:first-of-type {
+      max-width: 425px;
+
+      img {
+        width: 170px;
+        height: 170px;
+
+        &.one {
+          top: 0;
+          left: 100px;
+        }
+
+        &.two {
+          top: 50px;
+          left: 240px;
+        }
+
+        &.three {
+          top: 120px;
+          left: 0;
+        }
+
+        &.four {
+          top: 170px;
+          left: 150px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $tablet-breakpoint) {
+  section {
+    article:first-of-type {
+      min-height: 500px;
+
+      img {
+        width: 200px;
+        height: 200px;
+
+        &.one {
+          top: 0;
+          left: 50px;
+        }
+
+        &.two {
+          top: 110px;
+          left: 190px;
+        }
+
+        &.three {
+          top: 180px;
+          left: 0;
+        }
+
+        &.four {
+          top: 290px;
+          left: 160px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $tablet-breakpoint) {
+  section {
+    flex-direction: row;
+    justify-content: center;
+
+    article {
+      &:first-of-type {
+        min-width: 300px;
+        margin-right: 5%;
+      }
+
+      &:last-of-type {
+        max-width: 400px;
       }
     }
   }
