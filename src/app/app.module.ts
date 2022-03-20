@@ -7,7 +7,9 @@ import { FirstImpressionComponent } from './modules/introduction/first-impressio
 import { IntroductionComponent } from './modules/introduction/introduction.component';
 import { NavbarComponent } from './modules/introduction/navbar/navbar.component';
 import { JourneyComponent } from './modules/journey/journey.component';
-import { TimelineComponent } from './modules/timeline/timeline.component';
+import { TimelineComponent } from './modules/skills/timeline/timeline.component';
+import { ProjectsComponent } from './modules/projects/projects.component';
+import { SkillsComponent } from './modules/skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { TimelineComponent } from './modules/timeline/timeline.component';
     NavbarComponent,
     FirstImpressionComponent,
     JourneyComponent,
-    TimelineComponent
+    TimelineComponent,
+    ProjectsComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,

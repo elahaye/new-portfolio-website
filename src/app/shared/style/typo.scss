@@ -1,12 +1,22 @@
 @import "breakpoint.scss";
 
-h1 {
+.title-typo {
   font-family: "Playfair Display", serif;
 }
 
+.basic-typo {
+  font-family: "Quicksand", sans-serif;
+}
+
+h1,
 h2,
+h4 {
+  font-family: "Playfair Display", serif;
+}
+
 h3,
-p {
+p,
+li {
   font-family: "Quicksand", sans-serif;
 }
 

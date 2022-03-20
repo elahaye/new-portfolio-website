@@ -1,0 +1,86 @@
+@import "../../shared/style/breakpoint.scss";
+
+section,
+article,
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section {
+  margin-block: 50px;
+
+  article {
+    padding: 10px 0;
+    width: 100%;
+  }
+
+  h2 {
+    box-shadow: 0 0 0 3px var(--light-grey-color);
+    margin: 10px 0;
+    padding: 5px 20px;
+    border-radius: 50px;
+    text-align: center;
+    width: calc(100% - 80px);
+    max-width: 500px;
+
+    &:hover {
+      box-shadow: 0 0 0 3px var(--yellow-color);
+      cursor: pointer;
+    }
+  }
+
+  ul {
+    padding: 0;
+    text-align: center;
+
+    li {
+      list-style-type: none;
+    }
+  }
+
+  li,
+  .fas,
+  p {
+    color: var(--grey-color);
+  }
+
+  li,
+  p {
+    font-size: 18px;
+  }
+
+  .fas {
+    font-size: 25px;
+  }
+
+  div {
+    align-items: flex-start;
+
+    p {
+      display: inline-block;
+      text-align: center;
+      margin-block: 8px;
+    }
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
+  div {
+    flex-direction: row;
+    padding-top: 30px;
+
+    p {
+      margin-inline: 20px;
+    }
+  }
+}
+
+@media (min-width: $tablet-breakpoint) {
+  section {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
