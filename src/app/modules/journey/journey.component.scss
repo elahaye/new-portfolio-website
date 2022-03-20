@@ -11,7 +11,6 @@ section {
     &:first-of-type {
       position: relative;
       margin: 40px 0;
-      max-width: 300px;
       min-height: 350px;
       width: 100%;
 
@@ -19,9 +18,35 @@ section {
         position: absolute;
         border: 8px solid white;
         border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+
+    &:last-of-type {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: justify;
+      margin-inline: 10px;
+      max-width: 500px;
+      color: var(--grey-color);
+      margin-bottom: 50px;
+    }
+  }
+}
+
+/////////// IMAGES
+
+@media screen and (max-width: $phone-breakpoint),
+  (min-width: $tablet-breakpoint) and (max-width: $large-tablet-breakpoint) {
+  section {
+    article:first-of-type {
+      max-width: 300px;
+
+      img {
         width: 150px;
         height: 150px;
-        object-fit: cover;
 
         &.one {
           top: 0;
@@ -44,23 +69,10 @@ section {
         }
       }
     }
-
-    &:last-of-type {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: justify;
-      margin-inline: 10px;
-      max-width: 500px;
-      color: var(--grey-color);
-    }
   }
 }
 
-///////////
-
-@media screen and (min-width: $phone-breakpoint) {
+@media screen and (min-width: $phone-breakpoint) and (max-width: $tablet-breakpoint) {
   section {
     article:first-of-type {
       max-width: 425px;
@@ -93,10 +105,11 @@ section {
   }
 }
 
-@media screen and (min-width: $tablet-breakpoint) {
+@media screen and (min-width: $large-tablet-breakpoint) {
   section {
     article:first-of-type {
       min-height: 500px;
+      max-width: 425px;
 
       img {
         width: 200px;
@@ -126,6 +139,8 @@ section {
   }
 }
 
+//////// BREAKPOINTS
+
 @media screen and (min-width: $tablet-breakpoint) {
   section {
     flex-direction: row;
@@ -139,6 +154,7 @@ section {
 
       &:last-of-type {
         max-width: 400px;
+        margin-bottom: 0;
       }
     }
   }

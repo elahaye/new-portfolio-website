@@ -7,6 +7,7 @@ import { FirstImpressionComponent } from './modules/introduction/first-impressio
 import { IntroductionComponent } from './modules/introduction/introduction.component';
 import { NavbarComponent } from './modules/introduction/navbar/navbar.component';
 import { JourneyComponent } from './modules/journey/journey.component';
+import { TimelineComponent } from './modules/timeline/timeline.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { JourneyComponent } from './modules/journey/journey.component';
     IntroductionComponent,
     NavbarComponent,
     FirstImpressionComponent,
-    JourneyComponent
+    JourneyComponent,
+    TimelineComponent
   ],
   imports: [
     BrowserModule,
