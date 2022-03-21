@@ -24,7 +24,7 @@ section {
     border-radius: 50px;
     text-align: center;
     width: calc(100% - 80px);
-    max-width: 500px;
+    max-width: 400px;
 
     &:hover {
       box-shadow: 0 0 0 3px var(--yellow-color);
@@ -42,7 +42,6 @@ section {
   }
 
   li,
-  .fas,
   p {
     color: var(--grey-color);
   }
@@ -53,7 +52,9 @@ section {
   }
 
   .fas {
-    font-size: 25px;
+    color: var(--blue-color);
+    font-size: 23px;
+    margin-right: 5px;
   }
 
   div {
@@ -81,6 +82,10 @@ section {
 @media (min-width: $tablet-breakpoint) {
   section {
     flex-direction: row;
-    align-items: flex-start;
+    align-items: baseline;
+
+    article {
+      width: 50%;
+    }
   }
 }
