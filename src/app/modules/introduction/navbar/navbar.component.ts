@@ -18,6 +18,12 @@ export class NavbarComponent implements OnInit {
     this.innerWidth = window.innerWidth;
   }
 
+  public onCloseMenu(): void {
+    setTimeout(() => {
+      this.openMenu = false;
+    }, 500);
+  }
+
   @HostListener('window:resize', ['$event'])
   onResize() {
     this.innerWidth = window.innerWidth;

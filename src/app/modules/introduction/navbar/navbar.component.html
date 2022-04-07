@@ -17,10 +17,10 @@
   </section>
 
   <ng-template #links>
-      <a href="#" alt="My journey"> My journey </a>
-      <a href="#" alt="My skills"> My skills </a>
-      <a href="#" alt="My projects"> My projects </a>
-      <a href="#" alt="Contact me"> Contact me </a>
+      <a routerLink="/journey" alt="My journey" (click)="onCloseMenu()"> My journey </a>
+      <a routerLink="/skills" alt="My skills" (click)="onCloseMenu()"> My skills </a>
+      <a routerLink="/projects" alt="My projects" (click)="onCloseMenu()"> My projects </a>
+      <a routerLink="/contact" alt="Contact me" (click)="onCloseMenu()"> Contact me </a>
   </ng-template>
 
 </body>
