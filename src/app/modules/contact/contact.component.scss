@@ -51,6 +51,10 @@ button {
   }
 }
 
+#resume + button {
+  margin-top: 0;
+}
+
 a {
   font-size: 18px;
   text-decoration: none;
@@ -58,6 +62,22 @@ a {
   display: flex;
   align-items: center;
   cursor: pointer;
+}
+
+p, a, span {
+  &:hover {
+    color: var(--yellow-color);
+  }
+}
+
+span {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-color: var(--green-color);
+
+  &:hover {
+    text-decoration-color: var(--yellow-color);
+  }
 }
 
 .fas,
