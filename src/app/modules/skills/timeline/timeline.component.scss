@@ -42,7 +42,6 @@ body {
       color: #fff;
       border-radius: 18px;
       box-shadow: 0 0 0 3px var(--light-grey-color);
-      cursor: pointer;
       transition: all 0.4s;
 
       &:hover {
@@ -64,7 +63,6 @@ body {
       background: var(--green-color);
       border-radius: 50%;
       box-shadow: 0 0 0 3px var(--light-grey-color);
-      cursor: pointer;
       transition: all 0.4s;
     }
 
@@ -140,7 +138,6 @@ h3 {
   margin: 0;
   color: var(--grey-color);
   font-weight: bold;
-  cursor: pointer;
   transition: all 0.4s;
 
   &:hover {

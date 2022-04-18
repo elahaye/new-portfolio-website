@@ -60,8 +60,7 @@ header {
   background-color: white;
 
   #logo {
-    cursor: pointer;
-    transition: transform 0.8s;
+    transition: transform 0.8s ease-in-out;
     z-index: 100;
 
     &:hover {

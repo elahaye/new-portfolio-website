@@ -23,7 +23,7 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     setTimeout(() => {
       this.startView = true;
-    }, 4000);
+    }, 3000);
   }
 
   private scrollToElement(value: string): void {
