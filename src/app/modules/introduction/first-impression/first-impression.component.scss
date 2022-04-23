@@ -17,6 +17,7 @@ section {
     text-align: center;
 
     span {
+      text-align: left;
       display: block;
       white-space: nowrap;
       overflow: hidden;
@@ -150,7 +151,7 @@ section {
 @media screen and (min-width: $tablet-breakpoint) {
   section {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
 
     article {
       width: 40%;
@@ -163,10 +164,21 @@ section {
       }
     }
   }
+
+  h1 {
+    margin-left: 15%;
+  }
 }
 
 @media screen and (min-width: $desktop-breakpoint) {
   h1 {
     width: 290px;
+  }
+}
+
+@media screen and (min-width: $big-desktop-breakpoint) {
+  h1 {
+    width: 335px;
+    font-size: 50px;
   }
 }
