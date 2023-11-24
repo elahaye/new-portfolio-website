@@ -3,8 +3,8 @@ import { CommonModule } from "@angular/common";
 import { Component } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { BrowserAnimationsModule, provideAnimations } from '@angular/platform-browser/animations';
-import { log } from 'console';
 import { rotatingCircle1Animation, rotatingCircle1SmallAnimation, rotatingCircle2Animation, rotatingCircle2SmallAnimation } from 'src/app/shared/animations/rotating-circle.animation';
+import { AnimationEvent } from '@angular/animations';
 
 @Component({
   standalone: true,
@@ -37,7 +37,6 @@ import { rotatingCircle1Animation, rotatingCircle1SmallAnimation, rotatingCircle
           <ng-template #smallAnimation>
             <div class="circle1" [@rotatingCircle1SmallAnimation]="rotatingState" (@rotatingCircle1SmallAnimation.done)="onEnd($event)"></div>
             <div class="circle2" [@rotatingCircle2SmallAnimation]="rotatingState" (@rotatingCircle2SmallAnimation.done)="onEnd($event)"></div>
-
           </ng-template>
 
           <h2 class="green">Stay in touch</h2>
@@ -101,7 +100,7 @@ export class ContactComponent implements OnInit {
     this.getScreenSize();
   }
 
-  onEnd(event: any) {
+  onEnd(event: AnimationEvent) {
     this.rotatingState = event?.toState === 'in' ? 'out' : 'in';
   }
 }
