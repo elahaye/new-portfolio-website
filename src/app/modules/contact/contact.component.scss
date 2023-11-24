@@ -120,30 +120,10 @@ span {
 
 .circle1 {
   background: var(--yellow-color);
-  animation: circle1 6s linear infinite;
 }
 
 .circle2 {
   background: var(--blue-color);
-  animation: circle2 6s linear infinite;
-}
-
-@keyframes circle1 {
-  0% {
-    transform: rotate(0deg) translate(-115px) rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg) translate(-115px) rotate(-360deg);
-  }
-}
-
-@keyframes circle2 {
-  0% {
-    transform: rotate(0deg) translate(-115px) rotate(0deg);
-  }
-  100% {
-    transform: rotate(-360deg) translate(-115px) rotate(360deg);
-  }
 }
 
 @media screen and (min-width: $tablet-breakpoint) {
@@ -168,23 +148,5 @@ span {
   .circle2 {
     width: 30px;
     height: 30px;
-  }
-
-  @keyframes circle1 {
-    0% {
-      transform: rotate(0deg) translate(-165px) rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg) translate(-165px) rotate(-360deg);
-    }
-  }
-
-  @keyframes circle2 {
-    0% {
-      transform: rotate(0deg) translate(-165px) rotate(0deg);
-    }
-    100% {
-      transform: rotate(-360deg) translate(-165px) rotate(360deg);
-    }
   }
 }
