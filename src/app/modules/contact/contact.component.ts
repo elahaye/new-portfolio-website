@@ -47,7 +47,7 @@ import { AnimationEvent } from '@angular/animations';
       <section>
         <p class="grey">
           <i class="far fa-envelope"></i>
-          e.lahaye49@gmail.com
+          e.lahaye49&#64;gmail.com
         </p>
 
         <button>
