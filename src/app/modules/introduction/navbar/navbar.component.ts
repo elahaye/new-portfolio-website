@@ -1,22 +1,15 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss']
 })
-export class NavbarComponent implements OnInit {
+export class NavbarComponent {
+  public openMenu = false;
+  public innerWidth = window.innerWidth;
 
-  public openMenu: boolean= false;
-  public innerWidth: number = 0;
-
-  public TABLETBREAKPOINT: number = 768;
-
-  constructor() { }
-
-  ngOnInit(): void {
-    this.innerWidth = window.innerWidth;
-  }
+  public TABLETBREAKPOINT = 768;
 
   public onCloseMenu(): void {
     setTimeout(() => {

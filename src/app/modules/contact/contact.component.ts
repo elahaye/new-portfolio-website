@@ -1,4 +1,4 @@
-import { ChangeDetectorRef, HostListener, OnInit, inject } from '@angular/core';
+import { ChangeDetectorRef, HostListener, inject, OnInit } from '@angular/core';
 import { CommonModule } from "@angular/common";
 import { Component } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
