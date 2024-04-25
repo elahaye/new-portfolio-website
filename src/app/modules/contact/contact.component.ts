@@ -21,13 +21,10 @@ import { AnimationEvent } from '@angular/animations';
   ],
   styleUrls: ['./contact.component.scss'],
   template: `
-  <body>
     <h1 class="grey">Contact me</h1>
 
     <div id="structure">
-
-      <section>
-
+      <section class="flex flex-col place-items-center relative min-h-[40vh]">
         <div class="main">
           <ng-container *ngIf="!isViewSizeTablet; else smallAnimation">
             <div class="circle1" [@rotatingCircle1Animation]="rotatingState" (@rotatingCircle1Animation.done)="onEnd($event)"></div>
@@ -43,45 +40,41 @@ import { AnimationEvent } from '@angular/animations';
         </div>
       </section>
 
-
-      <section>
+      <section class="flex flex-col place-items-center mt-20 min-h-[30vh]">
         <p class="grey">
           <i class="far fa-envelope"></i>
           e.lahaye49&#64;gmail.com
         </p>
 
         <button>
-          <a class="basic-typo" target="_blank" href="https://www.linkedin.com/in/elise-lahaye-a8a1221a5/">
+          <a class="link" target="_blank" href="https://www.linkedin.com/in/elise-lahaye/">
             <i class="fab fa-linkedin"></i>
             <span>LinkedIn</span>
           </a>
         </button>
 
         <button>
-          <a class="basic-typo" target="_blank" href="https://github.com/elahaye">
+          <a class="link" target="_blank" href="https://github.com/elahaye">
             <i class="fab fa-github"></i>
             <span>Github</span>
           </a>
         </button>
 
         <button id="resume">
-          <a class="basic-typo" href="assets/resume_lahaye_elise_canada.pdf" download>
+          <a href="assets/resume_lahaye_elise_canada.pdf" download>
             <i class="fas fa-file-download"></i>
             Download my resume
           </a>
         </button>
 
         <button>
-          <a class="basic-typo" href="assets/CV_lahaye_elise_canada.pdf" download>
+          <a class="link" href="assets/CV_lahaye_elise_canada.pdf" download>
             <span>en Français</span>
           </a>
         </button>
-
       </section>
     </div>
-
-  </body>
-`,
+  `,
 })
 export class ContactComponent implements OnInit {
   rotatingState: string = 'in'; // Initial state

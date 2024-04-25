@@ -8,3 +8,26 @@
 body {
   margin: 0;
 }
+
+button {
+  margin-block: 15px;
+  background-color: white;
+
+  &.link {
+    border: none;
+    padding: 0;
+  }
+}
+
+a {
+  font-size: 18px;
+  text-decoration: none;
+  color: var(--grey-color);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--yellow-color);
+  }
+}

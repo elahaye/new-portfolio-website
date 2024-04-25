@@ -1,27 +1,24 @@
 @import "breakpoint.scss";
 
-.title-typo {
-  font-family: "Playfair Display", serif;
-}
-
-.basic-typo {
-  font-family: "Quicksand", sans-serif;
-}
-
+.title-typo,
 h1,
 h2,
 h4 {
   font-family: "Playfair Display", serif;
 }
 
+.basic-typo,
 h3,
 p,
-li {
+li,
+a {
   font-family: "Quicksand", sans-serif;
 }
 
 h1 {
   font-size: 32px;
+  text-align: center;
+  margin-top: 15px;
 }
 
 h2 {
@@ -31,10 +28,6 @@ h2 {
 
 p {
   font-size: 18px;
-}
-
-.bold {
-  font-weight: bold;
 }
 
 @media screen and (min-width: $desktop-breakpoint) {
