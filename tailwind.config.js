@@ -20,6 +20,20 @@ module.exports = {
     boxShadow: {
       'resume': '3px 3px 5px var(--green-color)',
     },
+    animation: {
+      'rotate-square-1': 'counterClockwise 80s linear infinite',
+      'rotate-square-2': 'clockwise 80s linear infinite',
+    },
+    keyframes: {
+      counterClockwise: {
+        '0%': {transform: 'rotate(360deg)'},
+        '100%': {transform: 'rotate(0deg)'},
+      },
+      clockwise: {
+        '0%': {transform: 'rotate(60deg)'},
+        '100%': {transform: 'rotate(420deg)'},
+      },
+    },
   },
   plugins: [],
 };
