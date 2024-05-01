@@ -1,4 +1,4 @@
-@import "../../shared/style/breakpoint.scss";
+@import '../../shared/style/breakpoint.scss';
 
 :host {
   display: block;
@@ -6,16 +6,8 @@
   padding: 10px;
 }
 
-button {
-  &#resume {
-    border: 1px solid var(--light-grey-color);
-    box-shadow: 3px 3px 5px var(--green-color);
-    border-radius: 15px;
-    padding: 10px 20px;
-  }
-}
-
-p, span {
+p,
+span {
   &:hover {
     color: var(--yellow-color);
   }
@@ -39,24 +31,7 @@ span {
   margin-right: 5px;
 }
 
-.main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 230px;
-  height: 230px;
-  border: 1px solid var(--light-grey-color);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  border-radius: 50%;
-}
-
-.circle1,
-.circle2 {
+.circle {
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -69,34 +44,13 @@ span {
   margin: auto;
 }
 
-.circle1 {
-  background: var(--yellow-color);
-}
-
-.circle2 {
-  background: var(--blue-color);
-}
-
 @media screen and (min-width: $tablet-breakpoint) {
-  #structure {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 70vh;
-
-    section {
-      width: 40vw;
-      max-width: 500px;
-    }
+  section {
+    width: 40vw;
+    max-width: 500px;
   }
 
-  .main {
-    width: 330px;
-    height: 330px;
-  }
-
-  .circle1,
-  .circle2 {
+  .circle {
     width: 30px;
     height: 30px;
   }
