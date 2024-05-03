@@ -12,12 +12,14 @@ import {ProjectsComponent} from './modules/projects/projects.component';
 import {SkillsComponent} from './modules/skills/skills.component';
 import {WorkInProgressComponent} from './modules/projects/components/work-in-progress.component';
 import {ContactComponent} from './modules/contact/contact.component';
+import {LoadingRippleComponent} from './shared/components/loading-ripple.component';
 
 @NgModule({
   declarations: [AppComponent, TimelineComponent, SkillsComponent],
   imports: [
     AppRoutingModule,
     BrowserModule,
+    LoadingRippleComponent,
     IntroductionComponent,
     NavbarComponent,
     FirstImpressionComponent,
