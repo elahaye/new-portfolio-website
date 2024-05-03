@@ -1,42 +1,11 @@
-@import "../../shared/style/breakpoint.scss";
+@import '../../shared/style/breakpoint.scss';
 
-section {
-  min-height: 100vh;
-  background-color: var(--light-green-color);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  article {
-    &:first-of-type {
-      position: relative;
-      margin: 40px 0;
-      min-height: 350px;
-      width: 100%;
-
-      img {
-        position: absolute;
-        border: 8px solid white;
-        border-radius: 50%;
-        object-fit: cover;
-      }
-    }
-
-    &:last-of-type {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: justify;
-      margin-inline: 10px;
-      max-width: 500px;
-      color: var(--grey-color);
-      margin-bottom: 50px;
-    }
-  }
+img {
+  position: absolute;
+  border: 8px solid white;
+  border-radius: 50%;
+  object-fit: cover;
 }
-
-/////////// IMAGES
 
 @media screen and (max-width: $phone-breakpoint),
   (min-width: $tablet-breakpoint) and (max-width: $large-tablet-breakpoint) {
@@ -139,8 +108,6 @@ section {
   }
 }
 
-//////// BREAKPOINTS
-
 @media screen and (min-width: $tablet-breakpoint) {
   section {
     flex-direction: row;
@@ -154,7 +121,7 @@ section {
 
       &:last-of-type {
         max-width: 500px;
-        width: 30%;
+        width: 40%;
         margin-bottom: 0;
       }
     }
