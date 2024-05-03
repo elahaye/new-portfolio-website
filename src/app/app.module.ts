@@ -16,7 +16,7 @@ import {ContactComponent} from './modules/contact/contact.component';
 @NgModule({
   declarations: [
     AppComponent,
-    IntroductionComponent,
+
     JourneyComponent,
     TimelineComponent,
     ProjectsComponent,
@@ -26,9 +26,10 @@ import {ContactComponent} from './modules/contact/contact.component';
   imports: [
     AppRoutingModule,
     BrowserModule,
-    ContactComponent,
+    IntroductionComponent,
     NavbarComponent,
     FirstImpressionComponent,
+    ContactComponent,
   ],
   bootstrap: [AppComponent],
 })
