@@ -10,17 +10,11 @@ import {JourneyComponent} from './modules/journey/journey.component';
 import {TimelineComponent} from './modules/skills/timeline/timeline.component';
 import {ProjectsComponent} from './modules/projects/projects.component';
 import {SkillsComponent} from './modules/skills/skills.component';
-import {WorkInProgressComponent} from './modules/projects/work-in-progress/work-in-progress.component';
+import {WorkInProgressComponent} from './modules/projects/components/work-in-progress.component';
 import {ContactComponent} from './modules/contact/contact.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    TimelineComponent,
-    ProjectsComponent,
-    SkillsComponent,
-    WorkInProgressComponent,
-  ],
+  declarations: [AppComponent, TimelineComponent, SkillsComponent],
   imports: [
     AppRoutingModule,
     BrowserModule,
@@ -28,6 +22,8 @@ import {ContactComponent} from './modules/contact/contact.component';
     NavbarComponent,
     FirstImpressionComponent,
     JourneyComponent,
+    ProjectsComponent,
+    WorkInProgressComponent,
     ContactComponent,
   ],
   bootstrap: [AppComponent],

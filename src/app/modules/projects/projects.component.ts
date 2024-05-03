@@ -1,8 +1,25 @@
-import { Component } from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {Component} from '@angular/core';
+import {WorkInProgressComponent} from './components/work-in-progress.component';
 
 @Component({
+  standalone: true,
+  imports: [CommonModule, WorkInProgressComponent],
   selector: 'app-projects',
-  templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.scss']
+  template: `
+    <section class="m-0 min-h-screen bg-light-green px-2.5 py-8">
+      <h1 class="text-grey text-center">My Projects</h1>
+
+      <div class="flex flex-col justify-center items-center">
+        <app-work-in-progress />
+
+        <p class="text-grey title-typo text-xl text-center max-w-[500px]">
+          This part is still on work.
+          <br />
+          Please be patient it's coming soon...
+        </p>
+      </div>
+    </section>
+  `,
 })
 export class ProjectsComponent {}

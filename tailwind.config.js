@@ -9,6 +9,7 @@ module.exports = {
       'light-grey': '#dedee0',
       'grey': '#4e4e57',
       'yellow': '#ffbf46',
+      'white': '#ffffff',
     },
     screens: {
       'phone': '480px',
