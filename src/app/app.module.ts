@@ -5,7 +5,7 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {FirstImpressionComponent} from './modules/introduction/components/first-impression.component';
 import {IntroductionComponent} from './modules/introduction/introduction.component';
-import {NavbarComponent} from './modules/introduction/navbar/navbar.component';
+import {NavbarComponent} from './modules/introduction/components/navbar.component';
 import {JourneyComponent} from './modules/journey/journey.component';
 import {TimelineComponent} from './modules/skills/timeline/timeline.component';
 import {ProjectsComponent} from './modules/projects/projects.component';
@@ -17,14 +17,19 @@ import {ContactComponent} from './modules/contact/contact.component';
   declarations: [
     AppComponent,
     IntroductionComponent,
-    NavbarComponent,
     JourneyComponent,
     TimelineComponent,
     ProjectsComponent,
     SkillsComponent,
     WorkInProgressComponent,
   ],
-  imports: [AppRoutingModule, BrowserModule, ContactComponent, FirstImpressionComponent],
+  imports: [
+    AppRoutingModule,
+    BrowserModule,
+    ContactComponent,
+    NavbarComponent,
+    FirstImpressionComponent,
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

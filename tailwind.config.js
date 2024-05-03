@@ -19,6 +19,7 @@ module.exports = {
     },
     boxShadow: {
       'resume': '3px 3px 5px var(--green-color)',
+      'navbar': '0 6px 7px -6px var(--blue-color)',
     },
     animation: {
       'rotate-square-1': 'counterClockwise 80s linear infinite',
