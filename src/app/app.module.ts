@@ -7,7 +7,7 @@ import {FirstImpressionComponent} from './modules/introduction/components/first-
 import {IntroductionComponent} from './modules/introduction/introduction.component';
 import {NavbarComponent} from './modules/introduction/components/navbar.component';
 import {JourneyComponent} from './modules/journey/journey.component';
-import {TimelineComponent} from './modules/skills/timeline/timeline.component';
+import {TimelineComponent} from './modules/skills/components/timeline/timeline.component';
 import {ProjectsComponent} from './modules/projects/projects.component';
 import {SkillsComponent} from './modules/skills/skills.component';
 import {WorkInProgressComponent} from './modules/projects/components/work-in-progress.component';
@@ -15,7 +15,7 @@ import {ContactComponent} from './modules/contact/contact.component';
 import {LoadingRippleComponent} from './shared/components/loading-ripple.component';
 
 @NgModule({
-  declarations: [AppComponent, TimelineComponent, SkillsComponent],
+  declarations: [AppComponent, SkillsComponent],
   imports: [
     AppRoutingModule,
     BrowserModule,
@@ -24,6 +24,7 @@ import {LoadingRippleComponent} from './shared/components/loading-ripple.compone
     NavbarComponent,
     FirstImpressionComponent,
     JourneyComponent,
+    TimelineComponent,
     ProjectsComponent,
     WorkInProgressComponent,
     ContactComponent,

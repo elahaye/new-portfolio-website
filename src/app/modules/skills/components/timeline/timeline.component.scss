@@ -1,6 +1,6 @@
-@import "../../../shared/style/breakpoint.scss";
+@import '../../../../shared/style/breakpoint.scss';
 
-body {
+:host {
   padding: 50px 0;
   margin: 0;
 }
@@ -13,7 +13,7 @@ body {
   box-sizing: border-box;
 
   &:before {
-    content: "";
+    content: '';
     position: absolute;
     left: 50%;
     width: 2px;
@@ -54,7 +54,7 @@ body {
     }
 
     &:before {
-      content: "";
+      content: '';
       position: absolute;
       width: 10px;
       height: 10px;
@@ -72,7 +72,7 @@ body {
       clear: both;
 
       &:before {
-        content: "";
+        content: '';
         right: -6px;
       }
 
@@ -159,6 +159,12 @@ h4 {
 .fas,
 .far {
   font-size: 15px;
+}
+
+img {
+  width: 15px;
+  display: inline;
+  filter: invert(84%) sepia(50%) saturate(1184%) hue-rotate(169deg) brightness(86%) contrast(31%);
 }
 
 .skills {
