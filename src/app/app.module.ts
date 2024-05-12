@@ -15,7 +15,7 @@ import {ContactComponent} from './modules/contact/contact.component';
 import {LoadingRippleComponent} from './shared/components/loading-ripple.component';
 
 @NgModule({
-  declarations: [AppComponent, SkillsComponent],
+  declarations: [AppComponent],
   imports: [
     AppRoutingModule,
     BrowserModule,
@@ -24,6 +24,7 @@ import {LoadingRippleComponent} from './shared/components/loading-ripple.compone
     NavbarComponent,
     FirstImpressionComponent,
     JourneyComponent,
+    SkillsComponent,
     TimelineComponent,
     ProjectsComponent,
     WorkInProgressComponent,
