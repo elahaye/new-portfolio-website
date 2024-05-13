@@ -83,14 +83,14 @@ import {AnimationEvent} from '@angular/animations';
         </button>
 
         <button class="shadow-resume py-2.5 px-5 rounded-2xl border border-light-grey border-solid">
-          <a href="assets/resume_lahaye_elise_canada.pdf" download>
+          <a href="assets/CV_Lahaye_Elise_2024.pdf" download>
             <i class="fas fa-file-download"></i>
             Download my resume
           </a>
         </button>
 
         <button>
-          <a class="link" href="assets/CV_lahaye_elise_canada.pdf" download>
+          <a class="link" href="assets/CV_Lahaye_Elise_french_2024.pdf" download>
             <span>en Français</span>
           </a>
         </button>
