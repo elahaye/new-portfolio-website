@@ -11,7 +11,7 @@ import {TimelineComponent} from './components/timeline/timeline.component';
 
     <section>
       <article>
-        <h2 class="bg-green white">Language Skills</h2>
+        <h2 class="bg-green text-white">Language Skills</h2>
 
         <ul>
           <li>
@@ -37,7 +37,7 @@ import {TimelineComponent} from './components/timeline/timeline.component';
       </article>
 
       <article>
-        <h2 class="bg-green white">Social Skills</h2>
+        <h2 class="bg-green text-white">Social Skills</h2>
 
         <div>
           <p>

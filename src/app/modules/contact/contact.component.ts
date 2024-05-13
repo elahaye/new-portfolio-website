@@ -24,7 +24,7 @@ import {AnimationEvent} from '@angular/animations';
   providers: [provideAnimations()],
   styleUrls: ['./contact.component.scss'],
   template: `
-    <h1 class="grey">Contact me</h1>
+    <h1 class="text-grey mt-[20px]">Contact me</h1>
 
     <div class="tablet:flex tablet:justify-center tablet:items-center tablet:min-h-[70vh]">
       <section class="relative flex flex-col justify-center items-center min-h-[40vh]">
@@ -58,12 +58,12 @@ import {AnimationEvent} from '@angular/animations';
             ></div>
           </ng-template>
 
-          <h2 class="green">Stay in touch</h2>
+          <h2 class="text-green">Stay in touch</h2>
         </div>
       </section>
 
       <section class="flex flex-col justify-center items-center min-h-[30vh]">
-        <p class="grey">
+        <p class="text-grey">
           <i class="far fa-envelope"></i>
           e.lahaye49&#64;gmail.com
         </p>
