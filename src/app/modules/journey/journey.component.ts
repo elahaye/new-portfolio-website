@@ -8,10 +8,10 @@ import {Component} from '@angular/core';
   template: `
     <section class="flex flex-col items-center min-h-screen bg-light-green mt-[60px]">
       <article class="relative my-10 min-h-[350px] w-full">
-        <img class="one" src="../assets/images/tokyo.jpg" alt="Photo Japon" />
-        <img class="two" src="../assets/images/london.jpg" alt="Photo Londres" />
-        <img class="three" src="../assets/images/montreal.jpg" alt="Photo Montréal" />
-        <img class="four" src="../assets/images/motivation.jpg" alt="Photo Motivation" />
+        <img class="one" src="assets/images/tokyo.jpg" alt="Photo Japon" />
+        <img class="two" src="assets/images/london.jpg" alt="Photo Londres" />
+        <img class="three" src="assets/images/montreal.jpg" alt="Photo Montréal" />
+        <img class="four" src="assets/images/motivation.jpg" alt="Photo Motivation" />
       </article>
 
       <article
