@@ -1,5 +1,5 @@
-import {CommonModule} from '@angular/common';
-import {Component, HostListener} from '@angular/core';
+import {CommonModule, ViewportScroller} from '@angular/common';
+import {Component, HostListener, inject} from '@angular/core';
 import {TABLET} from 'src/app/shared/enums/screen-size.enum';
 
 @Component({
@@ -14,11 +14,13 @@ import {TABLET} from 'src/app/shared/enums/screen-size.enum';
           'shadow-navbar transition-all duration-700 pb-1.5': !openMenu || innerWidth >= TABLET
         }"
       >
-        <img
-          src="assets/images/lotus.png"
-          alt="Image d'un lotus"
-          class="w-[50px] transition ease-in-out duration-1000 hover:[transform:rotateY(180deg)]"
-        />
+        <a routerLink="" (click)="scrollToAnchor('')">
+          <img
+            src="assets/images/lotus.png"
+            alt="Image d'un lotus"
+            class="w-[50px] transition ease-in-out duration-1000 hover:[transform:rotateY(180deg)] cursor-pointer"
+          />
+        </a>
 
         <section class="hidden z-50 desktop:flex desktop:justify-end desktop:z-40">
           <ng-container *ngTemplateOutlet="links" />
@@ -41,10 +43,16 @@ import {TABLET} from 'src/app/shared/enums/screen-size.enum';
       </section>
 
       <ng-template #links>
-        <a routerLink="/journey" alt="My journey" (click)="onCloseMenu()"> My journey </a>
-        <a routerLink="/skills" alt="My skills" (click)="onCloseMenu()"> My skills </a>
-        <a routerLink="/projects" alt="My projects" (click)="onCloseMenu()"> My projects </a>
-        <a routerLink="/contact" alt="Contact me" (click)="onCloseMenu()"> Contact me </a>
+        <a routerLink="/journey" alt="My journey" (click)="scrollToAnchor('journey')">
+          My journey
+        </a>
+        <a routerLink="/skills" alt="My skills" (click)="scrollToAnchor('skills')"> My skills </a>
+        <a routerLink="/projects" alt="My projects" (click)="scrollToAnchor('projects')">
+          My projects
+        </a>
+        <a routerLink="/contact" alt="Contact me" (click)="scrollToAnchor('contact')">
+          Contact me
+        </a>
       </ng-template>
     </div>
   `,
@@ -100,13 +108,18 @@ import {TABLET} from 'src/app/shared/enums/screen-size.enum';
   ],
 })
 export class NavbarComponent {
+  viewportScroller = inject(ViewportScroller);
   openMenu = false;
   innerWidth = window.innerWidth;
 
   TABLET = TABLET;
 
-  onCloseMenu(): void {
+  scrollToAnchor(anchor: string): void {
     setTimeout(() => {
+      const element = anchor ? document.getElementById(anchor) : '';
+      element
+        ? element.scrollIntoView({behavior: 'smooth', block: 'start', inline: 'nearest'})
+        : this.viewportScroller.scrollToPosition([0, 0]);
       this.openMenu = false;
     }, 500);
   }

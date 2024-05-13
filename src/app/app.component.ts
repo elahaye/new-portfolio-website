@@ -1,5 +1,4 @@
-import {Component, OnInit, inject} from '@angular/core';
-import {NavigationStart, Router} from '@angular/router';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -28,22 +27,7 @@ export class AppComponent implements OnInit {
   title = 'portfolio-website';
   startView = false;
 
-  #router = inject(Router);
-
-  constructor() {
-    this.#router.events.subscribe((event) => {
-      if (event instanceof NavigationStart) {
-        this.#scrollToElement(event.url.replace('/', ''));
-      }
-    });
-  }
-
   ngOnInit(): void {
     setTimeout(() => (this.startView = true), 3000);
-  }
-
-  #scrollToElement(value: string): void {
-    const element = document.getElementById(value);
-    if (element) element.scrollIntoView({behavior: 'smooth', block: 'start', inline: 'nearest'});
   }
 }

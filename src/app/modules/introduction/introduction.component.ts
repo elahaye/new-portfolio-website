@@ -30,7 +30,7 @@ import {blinkCaretAnimation, typingAnimation} from 'src/app/shared/animations/ty
         </div>
       </article>
       <h1
-        class="text-grey text-center phone:w-[230px] tablet:ml-[15%] desktop:w-[290px] big-desktop:w-[335px] big-desktop:text-5xl"
+        class="text-grey text-center mt-[50px] phone:w-[230px] tablet:ml-[15%] desktop:w-[290px] big-desktop:w-[335px] big-desktop:text-5xl"
       >
         Elise Lahaye
         <span
