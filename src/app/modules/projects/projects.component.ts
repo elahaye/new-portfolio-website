@@ -7,7 +7,7 @@ import {WorkInProgressComponent} from './components/work-in-progress.component';
   imports: [CommonModule, WorkInProgressComponent],
   selector: 'app-projects',
   template: `
-    <section class="m-0 min-h-screen bg-light-green px-2.5 py-8">
+    <section class="min-h-screen mt-[60px] pb-[60px] bg-light-green px-2.5 py-8">
       <h1 class="text-grey text-center">My Projects</h1>
 
       <div class="flex flex-col justify-center items-center">

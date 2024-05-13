@@ -7,7 +7,8 @@ import {NavigationStart, Router} from '@angular/router';
     <app-loading-ripple *ngIf="!startView" />
 
     <section [ngClass]="{'opacity': !startView}">
-      <app-introduction id="introduction" />
+      <app-navbar />
+      <app-introduction />
       <app-journey id="journey" />
       <app-skills id="skills" />
       <app-projects id="projects" />
